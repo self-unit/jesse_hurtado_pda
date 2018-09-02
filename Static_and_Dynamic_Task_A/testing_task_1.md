@@ -39,6 +39,6 @@ def self.cards_total(cards)
     return "You have a total of" + total
   end
 end
-# the variable 'total' has not been defined before being called in the for loop, meaning that there may be a string / integer issue present. The return statement has incorrect syntax and the variable 'total' has not been put inside a string interpolation marker, therefore the result will be only the words within quotes. The correct syntax would be "You have a total of #{total}".
+# the variable 'total' has not been defined before being called in the for loop, meaning that there may be a string / integer issue present. The return statement has incorrect syntax and the variable 'total' has not been put inside a string interpolation marker, therefore the result will be only the words within quotes. The correct syntax would be "You have a total of #{total}". The indentation is incorrect as the entire method should be one level up and there is a missing end for the class.
 
 ```
