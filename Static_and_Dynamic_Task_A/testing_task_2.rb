@@ -4,10 +4,11 @@
 # Correct the errors below that you spotted in task 1.
 
 require_relative('card.rb')
+
 class CardGame
 
   def check_for_ace(card)
-    if card.value = 1
+    if card.value == 1
       return true
     else
       return false
@@ -16,9 +17,9 @@ class CardGame
 
   def highest_card(card1, card2)
     if card1.value > card2.value
-      return card.name
+      return card1
     else
-      card2.name
+      card2
     end
   end
 
@@ -26,8 +27,8 @@ class CardGame
     total = 0
     for card in cards
       total += card.value
-      return "You have a total of #{total}"
     end
+    return "You have a total of #{total}"
   end
 
 end

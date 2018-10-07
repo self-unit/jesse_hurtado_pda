@@ -19,7 +19,7 @@ class CardGame
       return false
     end
   end
-# the method defined here has been written incorrectly for Ruby going against the established conventions. The method has been written in an inconsistent camel case instead of snake case. The correct definition would be: check_for_ace(card)
+# The method has been written in an inconsistent camel case instead of snake case. The correct definition would be: check_for_ace(card). card.value should have a double equals sign after it.
 
 
   dif highest_card(card1 card2)
@@ -30,7 +30,7 @@ class CardGame
   end
 end
 end
-# the definition for this method has been misspelt and there is a missing comma between the first and second parameters. It should be def hightest_card(card1, card2). The indentation is not correct as the first if statement should be indented further than the method definition and the second to last end should be the last for this method. The final end is incorrect as it closes the class. The inherent return of card2 after the else logic does not return the name of the card but a card object instead.
+# the definition for this method has been misspelt and there is a missing comma between the first and second parameters. It should be def hightest_card(card1, card2). The final end is incorrect as it closes the class. The method .name does not exist in the card class, therefore it won't return anything.
 
 def self.cards_total(cards)
   total
@@ -39,6 +39,6 @@ def self.cards_total(cards)
     return "You have a total of" + total
   end
 end
-# the variable 'total' has not been defined before being called in the for loop, meaning that there may be a string / integer issue present. The return statement has incorrect syntax and the variable 'total' has not been put inside a string interpolation marker, therefore the result will be only the words within quotes. The correct syntax would be "You have a total of #{total}". The indentation is incorrect as the entire method should be one level up and there is a missing end for the class.
+# the variable 'total' has not been defined before being called in the for loop, meaning that there may be a string / integer issue present. It should be set to 0. The return statement has incorrect syntax and the variable 'total' has not been put inside a string interpolation marker, therefore the result will be only the words within quotes. The correct syntax would be "You have a total of #{total}". The return should be called outside of the loop in order for the actual total of all cards to be displayed.
 
 ```
