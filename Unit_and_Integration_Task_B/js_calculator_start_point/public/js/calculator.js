@@ -33,8 +33,14 @@ Calculator.prototype = {
       this.runningTotal = '';
       this.newTotal = false;
     }
-    // concatenate the clicked number to the running total
-    this.runningTotal = parseFloat('' + this.runningTotal + number);
+
+    // when a number is divided by zero, a string error is produced in the total display
+    if (number === '0' && this.previousOperator === '/') {
+      this.runningTotal = 'divide by zero!';
+    } else {
+      // concatenate the clicked number to the running total
+      this.runningTotal = parseFloat('' + this.runningTotal + number);
+    }
 
   },
 
